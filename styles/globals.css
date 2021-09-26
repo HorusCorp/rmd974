@@ -200,7 +200,7 @@ a {
   width: 100%;
   }
   .caroussels__content__imgLFullScreen{
-  width: 750px;
+  width: 100%;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -221,7 +221,7 @@ a {
 }
 @media screen and (max-width: 859px){
   .caroussels__content__imgLFullScreen{
-  width: 650px;
+  width: 100%;
   height: 376px;
   display: flex;
   justify-content: center;
@@ -619,6 +619,41 @@ a {
     box-sizing: border-box;
     width: 100%;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstpart__home {
+    margin-top: -100px;
+    padding: 15px 10px;
+    flex-direction: column;
+  }
+
+  .img__cover__left {
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .firstpart__home_right {
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+  }
+  .secondpart__home {
+    padding: 35px 5px;
+  }
+  .thirdpart_home {
+    padding-right: 0;
+    height: 800px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .thirdpart_home h2 {
+    text-align: center;
   }
 }
 
@@ -651,6 +686,7 @@ a {
       width: 100%;
       border-radius: 15px;
     }
+    
 }
 
 /* ----------- iPhone 6, 7, 8 ----------- */
@@ -679,6 +715,39 @@ and (-webkit-min-device-pixel-ratio: 2) {
     box-sizing: border-box;
     width: 100%;
     border-radius: 15px;
+  }
+  .firstpart__home {
+    margin-top: -100px;
+    padding: 15px 10px;
+    flex-direction: column;
+  }
+
+  .img__cover__left {
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .firstpart__home_right {
+    width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+  }
+  .secondpart__home {
+    padding: 35px 5px;
+  }
+  .thirdpart_home {
+    padding-right: 0;
+    height: 800px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .thirdpart_home h2 {
+    text-align: center;
   }
 }
 
@@ -710,6 +779,43 @@ and (-webkit-min-device-pixel-ratio: 2) {
       width: 100%;
       border-radius: 15px;
     }
+    .firstpart__home {
+      margin-top: -100px;
+      padding: 15px 10px;
+      flex-direction: column;
+    }
+  
+    .img__cover__left {
+      box-sizing: border-box;
+      width: 100%;
+      height: 350px;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-top: 40px;
+    }
+    .firstpart__home_right {
+      width: 100%;
+      border-radius: 0;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 15px;
+    }
+    .secondpart__home {
+      padding: 35px 5px;
+    }
+    .thirdpart_home {
+      padding-right: 0;
+      height: 800px;
+      font-size: 15px;
+      text-align: justify;
+    }
+    .thirdpart_home h2 {
+      text-align: center;
+    }
+    .thirdpart_home__text__container {
+      height: auto;
+    }
 }
 /* ----------- GALAXY FOLD ----------- */
 @media(max-width: 320px){ 
@@ -740,6 +846,27 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 12px;
     padding: 25px;
   }
+  .index h2 {
+    font-size: 17px;
+  }
+  .home_container_card {
+    margin: 10px 5px;
+  }
+  .secondpart__home_container {
+    padding-top: 0;
+  }
+  .extralarge {
+    padding: 10px 25px;
+  }
+  .home_container_card .home_container_content h3{
+    font-size: 21px;
+  }
+  .home_container_card .home_container_content p {
+    font-size: 15px;
+  }
+  .thirdpart_home__text__container {
+    height: auto;
+  }
 }
 
 /* Portrait and Landscape */
@@ -767,6 +894,20 @@ and (-webkit-min-device-pixel-ratio: 2) {
       box-sizing: border-box;
       width: 100%;
       border-radius: 15px;
+    }
+    .firstpart__home {
+      margin-top: 0;
+      width: 100%;
+      padding: 10px 10px;
+    }
+    .firstpart__home_right p {
+      font-size: 12px;
+    }
+    .extralarge {
+      padding:  10px 25px;
+    }
+    .secondpart__home {
+      padding: 35px 5px;
     }
 }
 /* ----------- iPad Pro 10.5" ----------- */
@@ -797,6 +938,43 @@ and (-webkit-min-device-pixel-ratio: 2) {
       box-sizing: border-box;
       width: 100%;
       border-radius: 15px;
+    }
+    .firstpart__home {
+      margin-top: -100px;
+      padding: 15px 10px;
+      flex-direction: column;
+    }
+  
+    .img__cover__left {
+      box-sizing: border-box;
+      width: 100%;
+      height: 350px;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .firstpart__home_right {
+      width: 100%;
+      border-radius: 0;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 15px;
+    }
+    .secondpart__home {
+      padding: 35px 5px;
+    }
+    .thirdpart_home {
+      padding-right: 0;
+      height: 800px;
+      font-size: 15px;
+      text-align: justify;
+    }
+    .thirdpart_home h2 {
+      text-align: center;
+    }
+    .caroussels__contentFullScreen {
+      margin-right: 0;
+      width: 100%;
     }
 }
 
