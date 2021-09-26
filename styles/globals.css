@@ -1,0 +1,802 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #f7f7f7;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+p , li{
+  color: #8b8888;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.index > h1 {
+  color: white;
+}
+.index > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 55px;
+  margin: 0;
+  margin-top: 55px;
+  text-transform: uppercase;
+  color: black;
+}
+
+/*============================================================================================== NAVBAR ===========================================================================================*/
+
+.navs__content__basic{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 20px 0;
+  background-color: white;
+  border-bottom: 1px solid lightgray;   
+}
+
+.navs__content__basic > a{
+  text-decoration: none;
+  color: gray;
+  padding-left: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navs__content__basic > a:hover{
+  color: black!important;
+}
+.logo_navs{
+  background-size: cover;
+  background-position: center;
+}
+
+.navs__content__basicDark{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  padding: 20px 0;
+  background: #333;
+  border-bottom: 1px solid lightgray;   
+}
+.navs__content__basicDark > a{
+  text-decoration: none;
+  color: gray;
+  padding-left: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.active_navs{
+  color: black!important;
+}
+.active_navs > .MuiSvgIcon-root{
+  color: black!important;
+}
+.active_navsDark > .MuiSvgIcon-root{
+  color:white!important;
+}
+.navs__content__basicDark > a:hover{
+  color: white!important;
+}
+.navs__content__basicDark > .icon_links:hover{
+  color: white!important;
+}
+.navs__content__basicDark > .icon_links:hover > .MuiSvgIcon-root{
+  color: white!important;
+}
+.active_navsDark{
+  color: white!important;
+}
+.navs__content__basicDark > .icon_links:hover > .MuiSvgIcon-root{
+  color: white!important;
+}
+.right_sideDark > .icon_links:hover > .MuiSvgIcon-root{
+  color: white!important;
+}
+
+
+
+
+
+/*============================================================================================== BANNER CAROUSSEL ===========================================================================================*/
+
+.caroussels_content{
+  height: 40vh!important;
+}
+.caroussels__contentFullScreen{
+  position: absolute;
+  width: 100%;
+}
+.caroussels__content__imgContainerFullScreen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  color: white;
+  width: 100%;
+  padding:0;
+}
+.caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root{
+  font-size: 45px;
+  cursor: pointer;
+}
+.caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(1){
+  padding-left: 10px;
+  margin-right: -10px;
+}
+.caroussels__content__imgLFullScreen{
+  width: 100%;
+  height: 749px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+      animation: fadein 2s;
+}
+.caroussels__content__indicator{
+  position: absolute;
+  background: rgba(0,0,0,0);
+  width: 100%;
+  height: 80px;
+  top: 715px;
+  z-index: 250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caroussels__content__indicator > div{
+  border: 2px solid white;
+  width: 150px;
+  height: 80px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+.caroussels__content__indicator >  div:hover,.activeC{
+  transform:  translateY(-15px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.caroussels__content__indicator > div:nth-child(1){
+  background-image: url(/img1.png);
+}
+.caroussels__content__indicator > div:nth-child(2){
+  background-image: url(/img2.png);
+}
+.caroussels__content__indicator > div:nth-child(3){
+  background-image: url(/img3.png);
+}
+@keyframes fadein {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0,5; }
+}
+@media screen and (max-width: 1200px){
+  .caroussels__contentFullScreen{
+  width: 100%;
+  }
+  .caroussels__content__imgContainerFullScreen{
+  width: 100%;
+  }
+  .caroussels__content__imgLFullScreen{
+  width: 750px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  }
+  .caroussels__content__indicator{
+  top: 355px;
+  }
+  .caroussels__content__indicator > div{
+  border: 2px solid white;
+  width: 150px;
+  height: 80px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  }
+}
+@media screen and (max-width: 859px){
+  .caroussels__content__imgLFullScreen{
+  width: 650px;
+  height: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  }
+  .caroussels__content__indicator{
+  top: 335px;
+  }
+}
+@media screen and (max-width: 759px){
+  .caroussels__content__imgLFullScreen{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: none;
+  }
+  .caroussels__content__imgContainerFullScreen{
+  width: 100%;
+  padding: 0;
+  }
+  .caroussels__content__indicator{
+  top: 180px;
+  }
+  .caroussels__content__indicator > div{
+  width: 70px;
+  height: 50px;
+  margin: 0 5px;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(3){
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100!important;
+  margin-left: -50px;
+  color: white;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(1){
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-right: -50px;
+  z-index: 1000!important;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(1){
+  padding-left: 0;
+  margin-right: 0;
+  }
+}
+@media screen and (max-width: 505px){
+  .caroussels__content__imgLFullScreen{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  }
+  .caroussels__content__imgContainerFullScreen{
+  width: 100%;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(3){
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100!important;
+  margin-left: -50px;
+  color: white;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(1){
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-right: -50px;
+  z-index: 1000!important;
+  }
+}
+@media screen and (max-width: 300px){
+  @media screen and (max-width: 759px){
+  .caroussels__content__imgLFullScreen{
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+  }
+  }
+  .caroussels__content__imgContainerFullScreen{
+  width: 100%;
+  }
+  .caroussels__content__indicator{
+  top: 160px;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(3){
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100!important;
+  margin-left: -50px;
+  color: white;
+  }
+  .caroussels__content__imgContainerFullScreen > .MuiSvgIcon-root:nth-child(1){
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-right: -50px;
+  z-index: 1000!important;
+  }
+}
+
+
+
+
+
+
+
+/*============================================================================================== FIRST PART HOME ===========================================================================================*/
+.firstpart__home{
+  margin-top: 415px;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 125px;
+  display: flex;
+  justify-content: center;
+}
+.firstpart__home_left {
+  width: 40%;
+} 
+.firstpart__home_right {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 15px 75px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+  inset -5px -5px 5px rgba(255,255,255,0.5),
+   5px 5px 5px rgba(0,0,0,0.05),
+   -5px -5px 5px rgba(255,255,255,0.5);
+}
+.img__cover__left {
+  background-image: url(/img5.png);
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 600px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.justify_center{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end!important;
+  box-sizing: border-box;
+  padding: 25px 0;
+}
+
+
+
+
+
+/*============================================================================================== SECOND PART HOME ===========================================================================================*/
+
+.secondpart__home {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 35px 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondpart__home_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 40px 0;
+}
+
+.home_container_card {
+  position: relative; 
+  width: 310px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+  inset -5px -5px 5px rgba(255,255,255,0.5),
+   5px 5px 5px rgba(0,0,0,0.05),
+   -5px -5px 5px rgba(255,255,255,0.5);
+   border-radius: 15px;
+   margin: 30px;
+
+}
+
+.home_container_box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius:15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.home_container_card:hover .home_container_box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  background-image: linear-gradient(to right top, #ff594d, #ff773e, #ff942f, #ffb225, #face28);
+}
+
+.home_container_content {
+  padding: 20px;
+  text-align: center;
+}
+.home_container_content h2 {
+  position: absolute;
+  top: -120px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0,0,0,0.02);
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+.home_container_card:hover .home_container_content h2 {
+  color: rgba(0,0,0,0.05);
+}
+.home_container_card:hover .home_container_content h2,.home_container_card:hover .home_container_content h3,.home_container_card:hover .home_container_content p{
+  color: white;
+}
+.home_container_card .home_container_content h3 {
+  font-size: 1.8em;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+.home_container_card .home_container_content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/*============================================================================================== THIRD PART HOME ===========================================================================================*/
+.thirdpart_home{
+  width: 100%;
+  height: 850px;
+  background-image: url(/img2.png);
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.thirdpart_home__text__container {
+  width: 500px;
+  height: 400px;
+  color:  white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.6);
+  box-sizing: border-box;
+  padding: 25px;
+}
+/*============================================================================================== BTN ===========================================================================================*/
+
+.buttons__content__gradiant{
+  background-image: linear-gradient(to right top, #ff594d, #ff773e, #ff942f, #ffb225, #face28);
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  margin: 0px;
+  text-align: center;
+  max-width: 230px;
+  font-weight: 600px; 
+}
+.buttons__content__gradiant:hover{
+  opacity: 0.8;
+}
+.short{
+  padding: 5px 10px;
+  min-width: fit-content;
+  width: 60px;
+}
+.average{
+  padding: 7px 15px;
+  min-width: fit-content;
+  width: 110px;
+}
+.large{
+  padding: 10px 35px;
+  min-width: fit-content;
+  width: 110px;
+}
+.extralarge{
+  padding: 10px 95px;
+  min-width: fit-content;
+  width: 230px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*============================================================================================== FOOTER TOP ===========================================================================================*/
+
+.footertop {
+  background-color: white;
+  padding: 25px 50px;
+  box-sizing: border-box;
+  min-height: 40px;
+  width: 100%;
+  color: grey;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgray;
+}
+
+
+
+
+
+
+/*============================================================================================== ABOUT PAGE ===========================================================================================*/
+
+.about__page__first_zone {
+  min-height: calc(100vh - 141px);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_zone_container {
+  width: 60%;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: inset 5px 5px 5px rgb(0 0 0 / 5%), inset -5px -5px 5px rgb(255 255 255 / 50%), 5px 5px 5px rgb(0 0 0 / 5%), -5px -5px 5px rgb(255 255 255 / 50%);
+  display: flex;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.first_zone_container_text {
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 155px 35px;
+}
+.first_zone_container_img {
+  width: 40%;
+  height: 605px;
+  background-image: url(/containers.jpeg);
+  background-size: cover;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+} 
+
+
+
+/*============================================================================================== RESPONSIVE DESIGN ===========================================================================================*/
+/* ----------- iPhone 11, 11X ----------- */
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) and (-webkit-min-device-pixel-ratio: 3) {
+  .first_zone_container {
+    width: 96%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+  }
+  .first_zone_container_img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-position: bottom;
+  }
+  .first_zone_container_text {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .first_zone_container {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      flex-direction: column-reverse;
+      border-radius: 15px;
+    }
+    .first_zone_container_img {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      background-position: bottom;
+    }
+    .first_zone_container_text {
+      padding: 15px;
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: 15px;
+    }
+}
+
+/* ----------- iPhone 6, 7, 8 ----------- */
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .first_zone_container {
+    width: 96%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+  }
+  .first_zone_container_img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-position: bottom;
+  }
+  .first_zone_container_text {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .first_zone_container {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      flex-direction: column-reverse;
+      border-radius: 15px;
+    }
+    .first_zone_container_img {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      background-position: bottom;
+    }
+    .first_zone_container_text {
+      padding: 15px;
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: 15px;
+    }
+}
+/* ----------- GALAXY FOLD ----------- */
+@media(max-width: 320px){ 
+  .first_zone_container {
+    width: 96%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+  }
+  .first_zone_container_img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-position: bottom;
+  }
+  .first_zone_container_text {
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .footertop {
+    font-size: 12px;
+    padding: 25px;
+  }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .first_zone_container {
+      width: 70%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      flex-direction: column-reverse;
+      border-radius: 15px;
+    }
+    .first_zone_container_img {
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      background-position: bottom;
+    }
+    .first_zone_container_text {
+      padding: 15px;
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: 15px;
+    }
+}
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .first_zone_container {
+      width: 80%;
+      min-height: 800px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      flex-direction: column-reverse;
+      border-radius: 15px;
+    }
+    .first_zone_container_img {
+      width: 100%;
+      height: 520px;
+      border-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      background-position: bottom;
+    }
+    .first_zone_container_text {
+      padding: 15px;
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: 15px;
+    }
+}
+
