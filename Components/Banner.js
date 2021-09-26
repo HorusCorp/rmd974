@@ -12,7 +12,7 @@ useEffect(() => {
     }else if(BannerCarousel===3){
       setBannerCarousel(1)
     }
-  }, 100000);
+  }, 4000);
   return () => clearInterval(interval);
 }, [BannerCarousel]);
 
